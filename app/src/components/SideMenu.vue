@@ -3,16 +3,18 @@
     <div class="logo">
       <p>logo</p>
     </div>
-    <h3>Dashboard</h3>
+    <nav>
+      <ul>
+        <li><h3><router-link to="/dashboard">Dashboard</router-link></h3></li>
+        <li><h3><router-link to="/product">Product</router-link></h3></li>
+      </ul>
+    </nav>
   </div>
 </template>
 
 <script>
 export default {
   name: "SideMenu",
-  // components: {
-  //   ,
-  // },
 };
 </script>
 
@@ -39,8 +41,15 @@ export default {
       color: #707490;
     }
   }
-  h3 {
+  a {
     color: #4c4e6f;
+    text-decoration: none;
+  }
+  a:hover {
+    color: blue;
+  }
+  .router-link-active {
+    color: blue;
   }
 }
 
