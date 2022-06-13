@@ -1,0 +1,31 @@
+:root {
+  --font-family: "DMSans";
+  --font-family-bold: "DMSans-bold";
+}
+
+@font-face {
+  font-family: "DMSans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+  unicode-range: U+000-5FF;
+  src: 
+    local("DMSans"),
+    url("@/assets/fonts/DM_Sans/DMSans-Regular.woff") format("woff"), 
+    url("@/assets/fonts/DM_Sans/DMSans-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "DMSans-bold";
+  font-weight: 900;
+  font-style: bold;
+  font-display: block;
+  unicode-range: U+000-5FF;
+  src: 
+    local("DMSans"),
+    url("@/assets/fonts/DM_Sans/DMSans-Bold.woff") format("woff"), 
+    url("@/assets/fonts/DM_Sans/DMSans-Bold.ttf") format("ttf");
+}
+
+p, h2, h3, label {
+  font-family: var(--font-family);
+}
