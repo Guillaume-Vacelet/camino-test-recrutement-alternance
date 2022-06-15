@@ -17,7 +17,7 @@
       </div>
       <div class="display-toggle">
         <p>Afficher l'élément {{data.id}}</p>
-        <Toggle v-model="display" class="toggle-blue" />
+        <Toggle v-model="display" class="toggle-blue" @change="editVisibility"/>
       </div>
     </div>
   </div>
@@ -25,6 +25,7 @@
 
 <script>
 import Toggle from "@vueform/toggle";
+// import ItemService from "@/services/ItemService";
 
 export default {
   name: "CardItem",
@@ -37,6 +38,19 @@ export default {
     display: Boolean,
   },
   emits: ["update:title", "update:display"],
+  methods: {
+    async editTitle(str) {
+      str;
+      // const res = await ItemService.editTitle(this.data.id, str);
+      // console.log(res.data);
+    },
+    async editVisibility() {
+      // console.log(typeof this.data.id);
+      // const res = await ItemService.getItem(this.data.id);
+      // // const res = await ItemService.editVisibility(this.data.id);
+      // console.log(res.data);
+    },
+  },
 };
 </script>
 

@@ -21,6 +21,7 @@
 import SideMenu from "@/components/SideMenu";
 import CardList from "@/components/CardList";
 import { Slide } from "vue3-burger-menu";
+// import ItemService from "@/services/ItemService";
 
 export default {
   name: "HomeView",
@@ -29,6 +30,14 @@ export default {
     CardList,
     Slide,
   },
+  // async created() {
+  //   this.items = await this.getData();
+  // },
+  // methods: {
+  //   async getData() {
+  //     return ItemService.getAllItems();
+  //   },
+  // },
   data() {
     return {
       items: [
